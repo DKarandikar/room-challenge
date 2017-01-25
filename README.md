@@ -2,7 +2,7 @@
 
 ## Software challenge for decorating a room
 
-Python program to compute the area of the floor, volume of paint required to paint the walls and volume of the room given the dimensions of the room. Assumes 2 coats of paint at 12sqm per litre.
+Python program to compute the area of the floor, volume of paint required to paint the walls and volume of the room given the dimensions of the room. Assumes 2 coats of paint at 12sqm per litre, and that the ceiling is not to be painted.
 
 ## Installation
 
@@ -16,6 +16,8 @@ The resulting window should be:
 
 ![Main Page](images/frontpage.png)
 
+If this is unsuccesful, ensure python 3 is installed correctly and added to the system path, so it can be called from the download directory
+
 ## Example Usage
 
 Insert positive, real numbers into the entry boxes for height, width and depth. Press the calculate button and then the area, volume and quantity of paint required should be displayed at the bottom
@@ -25,6 +27,11 @@ For example:
 ![Example Usage](images/example.png)
 
 ## Changlog
+
+### [0.1.2] - 25-10-2017
+- Moved error messages to own method inside the main app in roomchallenge.py
+- Expanded docstring on app to summarise attributes
+- Added comments to explain error message and paint assumptions
 
 ### [0.1.1] - 25-10-2017
 - Updated README with installation, usage and changelog sections
