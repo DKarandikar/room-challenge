@@ -26,7 +26,7 @@ For example:
 
 ![Example Usage](images/example.png)
 
-## Changlog
+## Changelog
 
 ### [0.1.2] - 25-01-2017
 - Moved error messages to own method inside the main app in roomchallenge.py
