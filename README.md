@@ -6,10 +6,12 @@ Python program to compute the area of the floor, volume of paint required to pai
 
 ## Installation
 
-The application requires tkinter and Python 3, tkinter should be installed by default. 
+The application requires tkinter and Python 3, tkinter should be installed by default with Python 3. 
 
-Download the roomchallenge.py file and then, from the command line opened in the download directory, type the command:
+To run:
 
+        git clone https://github.com/DKarandikar/room-challenge.git
+        cd room-challenge
         python roomchallenge.py
 
 The resulting window should be: 
