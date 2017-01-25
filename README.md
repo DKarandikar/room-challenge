@@ -6,9 +6,9 @@ Python program to compute the area of the floor, volume of paint required to pai
 
 ## Installation
 
-The application requires tkinter and Python 3, tkinter should be installed by default. \
+The application requires tkinter and Python 3, tkinter should be installed by default. 
 
-Download the roomchallenge.py file and then from the command line in the download directory type command:
+Download the roomchallenge.py file and then, from the command line opened in the download directory, type the command:
 
         python roomchallenge.py
 
@@ -18,7 +18,7 @@ The resulting window should be:
 
 ## Example Usage
 
-Insert positive real numbers into the entry boxes for height, width and depth. Press the calculate button and then the area, volume and quantity of paint required should be displayed at the bottom
+Insert positive, real numbers into the entry boxes for height, width and depth. Press the calculate button and then the area, volume and quantity of paint required should be displayed at the bottom
 
 For example: 
 
