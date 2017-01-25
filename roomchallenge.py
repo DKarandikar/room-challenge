@@ -25,20 +25,26 @@ class App(tk.Tk):
 
 
     def calculate(self):
+        '''Calculates the required quantities and update StringVars to display them'''
         try:
             self.vars[0].set("")
             height = float(self.widgets["HeightE"].get())
             width = float(self.widgets["WidthE"].get())
             depth = float(self.widgets["DepthE"].get())
+            if height >= 0 and width >= 0 and depth >= 0:
+                volume = height*width*depth
+                area = width*depth
+                wall_area = 2*(height*width) + 2*(height*depth)
+                vol_req = 2*wall_area/12   #Assumes 2 coats of paint at 12sqm per litre
 
-            volume = height*width*depth
-            area = width*depth
-            wall_area = 2*(height*width) + 2*(height*depth)
-            vol_req = 2*wall_area/12   #Assumes 2 coats of paint at 12sqm per litre
-
-            self.vars[1].set("Area of the floor: " + "%.2f" % area +  " metres-squared")
-            self.vars[2].set("Volume of the room: " + "%.2f" % volume +  " metres-cubed")
-            self.vars[3].set("Paint required for walls: " + "%.2f" % vol_req +  " litres")
+                self.vars[1].set("Area of the floor: " + "%.2f" % area +  " metres-squared")
+                self.vars[2].set("Volume of the room: " + "%.2f" % volume +  " metres-cubed")
+                self.vars[3].set("Paint required for walls: " + "%.2f" % vol_req +  " litres")
+            else:
+                self.vars[0].set("Please insert only positive real numbers as dimensions")
+                self.vars[1].set("Area of the floor: 0.00 metres-squared")
+                self.vars[2].set("Volume of the room: 0.00 metres-cubed")
+                self.vars[3].set("Paint required for walls: 0.00 litres")
 
         except ValueError:
             self.vars[0].set("Please insert only positive real numbers as dimensions")
