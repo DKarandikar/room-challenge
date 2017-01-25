@@ -25,12 +25,13 @@ class App(tk.Tk):
 
 
     def calculate(self):
+        '''Calculates the required quantities and update StringVars to display them'''
         try:
             self.vars[0].set("")
             height = float(self.widgets["HeightE"].get())
             width = float(self.widgets["WidthE"].get())
             depth = float(self.widgets["DepthE"].get())
-            if height>= 0 and width >= 0 and depth >=0:
+            if height >= 0 and width >= 0 and depth >= 0:
                 volume = height*width*depth
                 area = width*depth
                 wall_area = 2*(height*width) + 2*(height*depth)
