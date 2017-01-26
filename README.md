@@ -2,19 +2,19 @@
 
 ## Software challenge for decorating a room
 
-Python program to compute the area of the floor, volume of paint required to paint the walls and volume of the room given the dimensions of the room. Assumes 2 coats of paint at 12sqm per litre, and that the ceiling is not to be painted.
+Python program to compute the area of the floor, volume of paint required to paint the walls and volume of the room; given the dimensions of the room. Assumes 2 coats of paint at 12sqm per litre, and that the ceiling is not to be painted.
 
 ## Installation
 
 The application requires tkinter and Python 3, tkinter should be installed by default with Python 3. 
 
-To run on windows, if git is installed:
+To run on windows, if git is installed, from command prompt type:
 
         git clone https://github.com/DKarandikar/room-challenge.git
         cd room-challenge
         python roomchallenge.py
 
-Otherwise download as zip from github directly, extract the files, and then just run with python in the directory containing roomchallenge.py 
+Otherwise; download as zip from github directly, extract the files, and then open a command prompt in the directory containing roomchallenge.py and type the third line above.
 
 The resulting window should be: 
 
