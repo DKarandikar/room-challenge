@@ -14,7 +14,7 @@ To run on windows, if git is installed:
         cd room-challenge
         python roomchallenge.py
 
-Otherwise use the github clone function directly and then just run using in the download location.
+Otherwise download as zip from github directly, extract the files, and then just run with python in the directory containing roomchallenge.py 
 
 The resulting window should be: 
 
