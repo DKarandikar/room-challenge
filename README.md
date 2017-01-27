@@ -16,6 +16,16 @@ To run on windows, if git is installed, from command prompt type:
 
 Otherwise; download as zip from github directly, extract the files, and then open a command prompt in the directory containing roomchallenge.py and type the third line above.
 
+To use with python 2.7 if that is all that is available open roomchallenge.py and change:
+
+                7. import tkinter as tk
+                8. from tkinter import ttk
+
+to:
+
+                7. import Tkinter as tk
+                8. import ttk
+
 The resulting window should be: 
 
 ![Main Page](images/frontpage.png)
